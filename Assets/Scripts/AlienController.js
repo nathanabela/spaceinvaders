@@ -1,6 +1,6 @@
 #pragma strict
 
-var alienlaser							
+var alienlaser							:Rigidbody;
 
 function shootLaser()
 {
@@ -12,8 +12,11 @@ function shootLaser()
 
 function Start ()
 {
-	var shootdelay:float=0
+	var shootdelay:float=0;
 
-	shootdelay = Random.Range(1.0,5.0);
+	shootdelay = Random.Range(1.0,15.0);
 	InvokeRepeating("shootLaser",shootdelay,shootdelay);
 }
+
+
+
