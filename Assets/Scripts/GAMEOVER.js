@@ -1,9 +1,10 @@
+
 #pragma strict
 
 
 function OnGUI()
 	{
-	GUI.BeginGroup (Rect(Screen.width/2-50,Screenheight/2-50,100,150));
+	GUI.BeginGroup (Rect(Screen.width/2-50,Screen.height/2-50,100,150));
 	GUI.Box(Rect(0,0,100,150),"Game Over");
 	
 	
