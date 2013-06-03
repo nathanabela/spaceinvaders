@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{65DF0F21-8434-8176-9A31-43D85D9782A4}") = "spaceinvaders", "Assembly-UnityScript.unityproj", "{A0483E6B-12D2-F0E5-44B0-41D79061FAAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0483E6B-12D2-F0E5-44B0-41D79061FAAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0483E6B-12D2-F0E5-44B0-41D79061FAAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0483E6B-12D2-F0E5-44B0-41D79061FAAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0483E6B-12D2-F0E5-44B0-41D79061FAAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+		$0.TextStylePolicy = $3
+		$3.FileWidth = 120
+		$3.TabWidth = 4
+		$3.EolMarker = Unix
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/plain
+		$3.scope = text/plain
+	EndGlobalSection
+EndGlobal
