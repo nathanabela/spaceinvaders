@@ -7,32 +7,32 @@ var			ShieldKeyInput		:KeyCode;
 
 var			time				:int			= 20;
 var			rand				:int			= 0;
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 
 function OnTriggerEnter(other:Collider)
 {
-	if(other.gameObject.tag == "alienlaser")								//hit by an alienLaser
+	if(other.gameObject.tag == "alienlaser")								
 	{
-		GameController.health -= 1;											//reduce health by 1
+		GameController.health -= 1;											
 	}
 	
 }
-//Hit by alienLaser and Reduce health by 1
+
 
 
 function Update ()
 {
-	//KEYS + ACTIONS
-	if (Input.GetKeyDown(KeyCode.Space))									//fire a playerLaser + shotsCount: Spacebar
+
+	if (Input.GetKeyDown(KeyCode.Space))									
 	{	
-		Instantiate(playerLaser,transform.position,transform.rotation);		//create playerLaser at player tranforms
-		GameController.shotsFired++;										//counter for shots fired
+		Instantiate(playerLaser,transform.position,transform.rotation);	
+		GameController.shotsFired++;									
 	}
 	
 	
 	
-	//BORDER
+
 	var border:float=1.0;
 		
 	if (transform.position.x < BordersCalculator.leftmost + border)
@@ -40,17 +40,15 @@ function Update ()
 		transform.position.x = BordersCalculator.leftmost + border;
 	}
 	
-	 (transform.position.x > BordersCalculator.rightmost - border)
+	if (transform.position.x > BordersCalculator.rightmost - border)
 	{
 		transform.position.x = BordersCalculator.rightmost - border;
 	}
 	
 	
-	//transform.Translate(Vector3.right * playerSpeed * Time.deltaTime * Input.GetAxis("Horizontal"));
+
 	var transH : float = Input.GetAxis("Horizontal") * 10 * Time.deltaTime;
 
 	transform.Translate(transH,0,0);
 
 }
-
-
